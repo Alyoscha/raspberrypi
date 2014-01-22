@@ -1,4 +1,4 @@
-Raspberry Pi (check_mk/nagios) checks
+Raspberry Pi (check_mk / nagios) checks
 =====================
 ###DESCRIPTION
 Raspberry Pi checks for command line and nagios / check_mk integration (with perf-data)
