@@ -1,4 +1,4 @@
-Raspberry Pi (check_mk) checks
+Raspberry Pi (check_mk/nagios) checks
 =====================
 
 ###REQUIREMENTS
