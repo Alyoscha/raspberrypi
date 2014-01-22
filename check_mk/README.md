@@ -1,12 +1,17 @@
 Raspberry Pi (check_mk/nagios) checks
 =====================
+###DESCRIPTION
+Raspberry Pi checks for command line and nagios / check_mk integration (with perf-data)
+
+###CHECKS
+arm_clock core_clock h264_clock isp_clock v3d_clock uart_clock pwm_clock emmc_clock pixel_clock vec_clock dpi_clock hdmi_clock soc_temp core voltage sdram_c_voltage sdram_p_voltage sdram_i_voltage arm_mem gpu_mem
 
 ###REQUIREMENTS
 * vcgencmd - (default provided by most of raspberrypi related distributions (e.g. raspbian, raspbmc, openelec...)
 
 ###INSTALL
-chmod +x rpi_check.sh
-check_mk:
+- chmod +x rpi_check.sh
+- check_mk:
 - copy rpi_check.sh to /usr/lib/check_mk_agent/local/
 - copy mrpe.cfg to /etc/check_mk/ (or edit your existing mrpe.cfg)  
 - reinvtory your Host(s): cmk -I HOST
