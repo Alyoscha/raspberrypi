@@ -19,9 +19,6 @@ check_mk:
 ###console usage
 ```bash
 ./rpi_check.sh $1
-./rpi_check.sh arm_clock
-OK - arm clock speed: 850 MHz|arm_clock=850;850;1000;;
-
 #params:
 arm_clock
 core_clock
