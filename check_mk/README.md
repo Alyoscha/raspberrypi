@@ -14,7 +14,7 @@ arm_clock core_clock h264_clock isp_clock v3d_clock uart_clock pwm_clock emmc_cl
 - check_mk:
 - copy rpi_check.sh to /usr/lib/check_mk_agent/local/
 - copy mrpe.cfg to /etc/check_mk/ (or edit your existing mrpe.cfg)  
-- reinvtory your Host(s): cmk -I HOST
+- reinventory your Host(s): cmk -I HOST
 - reload or restart check_mk: cmk -O #reload - cmk -R #restart
 
 ###check_mk samples:
