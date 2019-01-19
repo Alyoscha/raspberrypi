@@ -7,7 +7,7 @@ Raspberry Pi checks for command line and nagios / check_mk integration (with per
 arm_clock core_clock h264_clock isp_clock v3d_clock uart_clock pwm_clock emmc_clock pixel_clock vec_clock dpi_clock hdmi_clock soc_temp core_voltage sdram_c_voltage sdram_p_voltage sdram_i_voltage arm_mem gpu_mem
 
 ###REQUIREMENTS
-* vcgencmd - (default provided by most of raspberrypi related distributions (e.g. raspbian, raspbmc, openelec...)
+* vcgencmd - (default provided by most of raspberrypi related distributions (e.g. raspbian, raspbmc, openelec...))
 
 ###INSTALL
 - chmod +x rpi_check.sh
