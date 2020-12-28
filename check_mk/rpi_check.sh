@@ -165,14 +165,14 @@ case ${check} in
 
 	core_voltage)
         core_voltage=`$vcgencmd measure_volts core | egrep -o [0-9\.]+`
-        if [[ $core_voltage > 1.4 ]]; then
-                echo "CRIT - core voltage: ${core_voltage}V|core_voltage=$core_voltage;1.3;1.4;;"
+        if [[ $core_voltage > 1.4000 ]]; then
+                echo "CRIT - core voltage: ${core_voltage}V|core_voltage=$core_voltage;1.3000;1.4000;;"
                         exit 2
-        elif [[ $core_voltage > 1.3 ]]; then
-                echo "WARN - core voltage: ${core_voltage}V|core_voltage=$core_voltage;1.3;1.4;;"
+        elif [[ $core_voltage > 1.3000 ]]; then
+                echo "WARN - core voltage: ${core_voltage}V|core_voltage=$core_voltage;1.3000;1.4000;;"
                         exit 1
         else
-                echo "OK - core voltage: ${core_voltage}V|core_voltage=$core_voltage;1.3;1.4;;"
+                echo "OK - core voltage: ${core_voltage}V|core_voltage=$core_voltage;1.3000;1.4000;;"
                         exit 0
         fi
         ;;
